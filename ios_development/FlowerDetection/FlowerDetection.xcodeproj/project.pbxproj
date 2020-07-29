@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E9998DB2406906B00E6ACB7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9998DA2406906B00E6ACB7 /* DetailsViewController.swift */; };
+		2EBCCAEB24059F9100F220F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCCAEA24059F9100F220F8 /* AppDelegate.swift */; };
+		2EBCCAED24059F9100F220F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCCAEC24059F9100F220F8 /* SceneDelegate.swift */; };
+		2EBCCAEF24059F9100F220F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCCAEE24059F9100F220F8 /* ViewController.swift */; };
+		2EBCCAF224059F9100F220F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCCAF024059F9100F220F8 /* Main.storyboard */; };
+		2EBCCAF424059F9400F220F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCCAF324059F9400F220F8 /* Assets.xcassets */; };
+		2EBCCAF724059F9400F220F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCCAF524059F9400F220F8 /* LaunchScreen.storyboard */; };
+		2EBCCB012405AFF300F220F8 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCCB002405AFF300F220F8 /* FlowerClassifier.mlmodel */; };
+		976C70F37AADD903A4D75C12 /* Pods_FlowerDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A622DDA9C4041A736A002D3 /* Pods_FlowerDetection.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A622DDA9C4041A736A002D3 /* Pods_FlowerDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9998DA2406906B00E6ACB7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		2EBCCAE724059F9100F220F8 /* FlowerDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBCCAEA24059F9100F220F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EBCCAEC24059F9100F220F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EBCCAEE24059F9100F220F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EBCCAF124059F9100F220F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EBCCAF324059F9400F220F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EBCCAF624059F9400F220F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EBCCAF824059F9400F220F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBCCB002405AFF300F220F8 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FlowerClassifier.mlmodel; path = FlowerDetection/model/FlowerClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		6E48F92EE494352159DA54B2 /* Pods-FlowerDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerDetection.release.xcconfig"; path = "Target Support Files/Pods-FlowerDetection/Pods-FlowerDetection.release.xcconfig"; sourceTree = "<group>"; };
+		820DA0F0AA706AC8D43B5DD2 /* Pods-FlowerDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerDetection.debug.xcconfig"; path = "Target Support Files/Pods-FlowerDetection/Pods-FlowerDetection.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EBCCAE424059F9100F220F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976C70F37AADD903A4D75C12 /* Pods_FlowerDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9998D72406901D00E6ACB7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCCB002405AFF300F220F8 /* FlowerClassifier.mlmodel */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2E9998D82406902700E6ACB7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCCAF024059F9100F220F8 /* Main.storyboard */,
+				2EBCCAF524059F9400F220F8 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2E9998D92406903C00E6ACB7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCCAEE24059F9100F220F8 /* ViewController.swift */,
+				2EBCCAEA24059F9100F220F8 /* AppDelegate.swift */,
+				2EBCCAEC24059F9100F220F8 /* SceneDelegate.swift */,
+				2E9998DA2406906B00E6ACB7 /* DetailsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2EBCCADE24059F9100F220F8 = {
+			isa = PBXGroup;
+			children = (
+				2EBCCAE924059F9100F220F8 /* FlowerDetection */,
+				2EBCCAE824059F9100F220F8 /* Products */,
+				8CD7FB791659520B7457E978 /* Pods */,
+				C323B2FD17F1F3135D6EC6C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EBCCAE824059F9100F220F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCCAE724059F9100F220F8 /* FlowerDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EBCCAE924059F9100F220F8 /* FlowerDetection */ = {
+			isa = PBXGroup;
+			children = (
+				2E9998D92406903C00E6ACB7 /* controller */,
+				2E9998D82406902700E6ACB7 /* view */,
+				2E9998D72406901D00E6ACB7 /* model */,
+				2EBCCAF324059F9400F220F8 /* Assets.xcassets */,
+				2EBCCAF824059F9400F220F8 /* Info.plist */,
+			);
+			path = FlowerDetection;
+			sourceTree = "<group>";
+		};
+		8CD7FB791659520B7457E978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				820DA0F0AA706AC8D43B5DD2 /* Pods-FlowerDetection.debug.xcconfig */,
+				6E48F92EE494352159DA54B2 /* Pods-FlowerDetection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C323B2FD17F1F3135D6EC6C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A622DDA9C4041A736A002D3 /* Pods_FlowerDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EBCCAE624059F9100F220F8 /* FlowerDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBCCAFB24059F9400F220F8 /* Build configuration list for PBXNativeTarget "FlowerDetection" */;
+			buildPhases = (
+				768CFE8F7A6424541CB67C4B /* [CP] Check Pods Manifest.lock */,
+				2EBCCAE324059F9100F220F8 /* Sources */,
+				2EBCCAE424059F9100F220F8 /* Frameworks */,
+				2EBCCAE524059F9100F220F8 /* Resources */,
+				06C83286950F79D790A992F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerDetection;
+			productName = FlowerDetection;
+			productReference = 2EBCCAE724059F9100F220F8 /* FlowerDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EBCCADF24059F9100F220F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ranajit Chandra";
+				TargetAttributes = {
+					2EBCCAE624059F9100F220F8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2EBCCAE224059F9100F220F8 /* Build configuration list for PBXProject "FlowerDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EBCCADE24059F9100F220F8;
+			productRefGroup = 2EBCCAE824059F9100F220F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EBCCAE624059F9100F220F8 /* FlowerDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EBCCAE524059F9100F220F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBCCAF724059F9400F220F8 /* LaunchScreen.storyboard in Resources */,
+				2EBCCAF424059F9400F220F8 /* Assets.xcassets in Resources */,
+				2EBCCAF224059F9100F220F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C83286950F79D790A992F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerDetection/Pods-FlowerDetection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerDetection/Pods-FlowerDetection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlowerDetection/Pods-FlowerDetection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		768CFE8F7A6424541CB67C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EBCCAE324059F9100F220F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBCCB012405AFF300F220F8 /* FlowerClassifier.mlmodel in Sources */,
+				2EBCCAEF24059F9100F220F8 /* ViewController.swift in Sources */,
+				2EBCCAEB24059F9100F220F8 /* AppDelegate.swift in Sources */,
+				2EBCCAED24059F9100F220F8 /* SceneDelegate.swift in Sources */,
+				2E9998DB2406906B00E6ACB7 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EBCCAF024059F9100F220F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBCCAF124059F9100F220F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EBCCAF524059F9400F220F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBCCAF624059F9400F220F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EBCCAF924059F9400F220F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EBCCAFA24059F9400F220F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EBCCAFC24059F9400F220F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820DA0F0AA706AC8D43B5DD2 /* Pods-FlowerDetection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cranajit.FlowerDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EBCCAFD24059F9400F220F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E48F92EE494352159DA54B2 /* Pods-FlowerDetection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowerDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cranajit.FlowerDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EBCCAE224059F9100F220F8 /* Build configuration list for PBXProject "FlowerDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBCCAF924059F9400F220F8 /* Debug */,
+				2EBCCAFA24059F9400F220F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBCCAFB24059F9400F220F8 /* Build configuration list for PBXNativeTarget "FlowerDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBCCAFC24059F9400F220F8 /* Debug */,
+				2EBCCAFD24059F9400F220F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EBCCADF24059F9100F220F8 /* Project object */;
+}
